@@ -97,5 +97,6 @@ body {
 }
 
 .quote-box button:nth-child(2){
-    
+    background: transparent;
+    color: #333;
 }
