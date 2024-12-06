@@ -5,7 +5,9 @@ const author = document.getElementById("author");
 async function randoquotes(url){
     const response = await fetch(url)
     const data = await response.json()
-    console.log(data); 
+    // console.log(data); 
+    quote.innerHTML = data.quote;
+    author.innerHTML = data.author;
 }
 
 randoquotes(api_url);
