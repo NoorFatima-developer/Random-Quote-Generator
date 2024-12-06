@@ -91,6 +91,11 @@ body {
     color: #fff;
 }
 
-.quote-box div button img {
-    width: 40%;
+.quote-box button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.quote-box button:nth-child(2){
+    
 }
