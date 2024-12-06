@@ -1,8 +1,9 @@
 const api_url = "https://dummyjson.com/quotes/random";
 const quote = document.getElementById("quote");
 const author = document.getElementById("author");
+const newquote = document.getElementById("newquote");
 
-async function randoquotes(url){
+async function randomquotes(url){
     const response = await fetch(url)
     const data = await response.json()
     // console.log(data); 
@@ -10,4 +11,8 @@ async function randoquotes(url){
     author.innerHTML = data.author;
 }
 
-randoquotes(api_url);
+randomquotes(api_url);
+
+newquote.addEventListener("click", function(){
+    randomquotes(api_url)
+})
