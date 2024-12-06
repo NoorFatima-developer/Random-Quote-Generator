@@ -104,5 +104,10 @@ body {
 @media (max-width: 580px) {
     .quote-box{
         width: 500px;
+       
+    }
+
+    .quote-box .blockquote {
+        font-size: 20px;
     }
 }
