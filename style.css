@@ -103,11 +103,16 @@ body {
 
 @media (max-width: 580px) {
     .quote-box{
-        width: 500px;
-       
+        width: 90%;
+        max-width: 500px;
+        padding: 20px;
     }
 
     .quote-box .blockquote {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    .quote-box h2 {
+        font-size: 24px;
     }
 }
