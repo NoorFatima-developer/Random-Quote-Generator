@@ -15,7 +15,7 @@ async function randomquotes(url){
 randomquotes(api_url);
 
 function linkedinquote(){
-    window.open("https://www.linkedin.com/shareArticle?mini=true&url=YOUR_WEBSITE_URL&title=" + encodeURIComponent("Quote: " + quote.innerHTML) + "&summary=" + encodeURIComponent("— " + author.innerHTML), "Share Quote", "width=600,height=400,scrollbars=yes,resizable=yes");
+    window.open("https://linkedin.com/shareArticle?url=WEBSITE_URL&title=WEBSITE_TITLE" + quote.innerHTML + "----by" + author.innerHTML, "Tweet Window", "width=600,height=300");
 }
 
 
