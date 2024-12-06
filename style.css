@@ -70,7 +70,7 @@ body {
 }
 
 .quote-box div {
-    background-color: red;
+    /* background-color: red; */
     width: 100%;
     margin-top: 50px;
     display: flex;
@@ -89,4 +89,8 @@ body {
     justify-content: center;
     align-items: center;
     color: #fff;
+}
+
+.quote-box div button img {
+    width: 40%;
 }
