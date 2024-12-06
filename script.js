@@ -25,5 +25,5 @@ newquote.addEventListener("click", function(){
     randomquotes(api_url)
 })
 
-// use this way without event listener...
-tweet.addEventListener("click", tweeter);
+// use onclick instead of click but then must be use without event listener...
+tweet.onclick = tweeter;
