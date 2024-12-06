@@ -2,7 +2,7 @@ const api_url = "https://dummyjson.com/quotes/random";
 const quote = document.getElementById("quote");
 const author = document.getElementById("author");
 const newquote = document.getElementById("newquote");
-const tweet = document.getElementById("tweet");
+const linkedin = document.getElementById("linkedin");
 
 async function randomquotes(url){
     const response = await fetch(url)
@@ -14,16 +14,18 @@ async function randomquotes(url){
 
 randomquotes(api_url);
 
-function tweeter(){
-    window.open("https://twitter.com/intent/tweet?text=Hello%20World");
+function linkedinquote(){
+    window.open("https://www.linkedin.com/shareArticle?mini=true&url=YOUR_WEBSITE_URL&title=" + encodeURIComponent("Quote: " + quote.innerHTML) + "&summary=" + encodeURIComponent("— " + author.innerHTML), "Share Quote", "width=600,height=400,scrollbars=yes,resizable=yes");
 }
+
+
+
+// use onclick instead of click but then must be use without event listener...
+newquote.onclick = function(){
+    randomquotes(api_url)
+} 
 
 // must use function keyword because we are passing argument so osko btana pryga k ye func hain..
 // aghr ni argument pass krna chahty tu dont use func but osklye fer directly fetch k andr url pass krna pryga ta k isko randomquotes(api_url) hum essy call krain bs
 // randomquotes(), then hi hum eventlistener m without func likh skty hain..
-newquote.addEventListener("click", function(){
-    randomquotes(api_url)
-})
-
-// use onclick instead of click but then must be use without event listener...
-tweet.onclick = tweeter;
+linkedin.addEventListener("click", linkedinquote);
