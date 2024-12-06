@@ -19,7 +19,6 @@ function linkedinquote(){
 }
 
 
-
 // use onclick instead of click but then must be use without event listener...
 newquote.onclick = function(){
     randomquotes(api_url)
